@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<schema id="org.gnome.shell.extensions.speedbackground" path="/org/gnome/shell/extensions/speedbackground/">
+		<!-- wakeup interval slider -->
+		<key type="d" name="wakeup-interval">
+			<default>0.01</default>
+			<summary>the interval between checks for the background</summary>
+		</key>
+        <key type="d" name="opacity-step">
+			<default>0.1</default>
+			<summary>how much crossfading is neccesary to update</summary>
+		</key>
+	</schema>
+	
+</schemalist>

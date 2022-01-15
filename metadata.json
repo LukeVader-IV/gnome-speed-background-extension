@@ -1,0 +1,8 @@
+{
+    "uuid": "speedbackground@luke.vader",
+    "name": "Speed background",
+    "description": "Increase how often Gnome will check the background.",
+    "version": 1,
+    "shell-version": [ "41" ],
+    "url": ""
+}

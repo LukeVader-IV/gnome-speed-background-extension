@@ -5,18 +5,23 @@ const St = imports.gi.St;
 const background = imports.ui.background;
 const init_opacity = background.ANIMATION_OPACITY_STEP_INCREMENT 
 const init_wakeup = background.ANIMATION_MIN_WAKEUP_INTERVAL
-const settings = imports.misc.extensionUtils.getSettings('org.gnome.shell.extensions.speedbackground');
+const ExtensionUtils = imports.misc.extensionUtils;
+const settings = null;
 
 class Extension{
 	constructor(){
 	}
 	
 	enable(){
+		settings = ExtensionUtils.getSettings('org.gnome.shell.extensions.speedbackground');
+		
 		background.ANIMATION_OPACITY_STEP_INCREMENT = OPACITY_STEP.get();
 		background.ANIMATION_MIN_WAKEUP_INTERVAL = WAKEUP_INTERVAL.get();
 	}
 	
 	disable(){
+		settings = null;
+
 		background.ANIMATION_OPACITY_STEP_INCREMENT = init_opacity;
 		background.ANIMATION_MIN_WAKEUP_INTERVAL = init_wakeup;
 	}

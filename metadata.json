@@ -3,7 +3,7 @@
   "description": "Increase how often Gnome will check the background.",
   "name": "Speed background",
   "shell-version": [
-    "41"
+    "40", "41", "42"
   ],
   "url": "git@github.com:LukeVader-IV/gnome-speed-background-extension.git",
   "uuid": "speedbackground@luke.vader",

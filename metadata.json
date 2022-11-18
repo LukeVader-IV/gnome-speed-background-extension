@@ -5,7 +5,8 @@
 	"shell-version": [
 		"40", "41", "42", "43"
 	],
+	"session-modes": [ "user", "unlock-dialog" ],
 	"url": "git@github.com:LukeVader-IV/gnome-speed-background-extension.git",
 	"uuid": "speedbackground@luke.vader",
-	"version": 7
+	"version": 8
 }

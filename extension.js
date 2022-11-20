@@ -2,6 +2,8 @@
 const Gio = imports.gi.Gio;
 const St = imports.gi.St;
 
+const unlock = imports.ui.unlockDialog;
+const Main = imports.ui.main;
 const background = imports.ui.background;
 const init_opacity = background.ANIMATION_OPACITY_STEP_INCREMENT 
 const init_wakeup = background.ANIMATION_MIN_WAKEUP_INTERVAL
@@ -24,6 +26,10 @@ class Extension{
 
 		background.ANIMATION_OPACITY_STEP_INCREMENT = init_opacity;
 		background.ANIMATION_MIN_WAKEUP_INTERVAL = init_wakeup;
+    
+    // this extension uses both user and unlock-dialog session modes
+    // this is done so that the higher refresh rate is retained in the lock-settings
+    // without this, there would be a very jarring transition when locking, a high frame rate background will suddenly drop, causing it to skip frames and look quite ugly
 	}
 }
 

@@ -6,10 +6,11 @@
     "40",
     "41",
     "42",
-    "43"
+    "43",
+    "44"
   ],
   "session-modes": [ "user", "unlock-dialog" ],
   "url": "https://github.com/LukeVader-IV/gnome-speed-background-extension/",
   "uuid": "speedbackground@luke.vader",
-  "version": 9
+  "version": 10
 }
